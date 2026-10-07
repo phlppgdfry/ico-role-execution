@@ -55,3 +55,7 @@ Functional portal tested withPlaywright because built-inBrowser/IAB unavailable;
 - Narrow structural/known-secret-pattern checks,not comprehensiveCVE/pentestcertification.
 
 These boundaries do not leave important requirements without artefacts; they honestly bound productproof and realauthority. Repo is ready to demonstrate how the role works, with real runnablelab and verifiable operationalthinking.
+
+## GitHub gate
+
+Default CI and full-server CI both passed; the latter actually downloads/checks/deploys/redeploys WildFly and runs the same HTTPcontract. Java sources consistently formatted for review, then all25 domain tests recompiled/passed. The release manifest records actual WAR hash plus source hash and clean/dirty provenance, not a fabricated approval.

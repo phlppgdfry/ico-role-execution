@@ -21,3 +21,7 @@ Actual WildFly EE10 41.0.1 WARdeployment + undeploy/redeploy was executed locall
 [Desktop portal](portal-desktop.png) · [Mobile portal](portal-mobile.png) · [Machine-readable evidence](../../operations/evidence/verification.json). Screenshots contain masked generatedtoken,syntheticdata only.
 
 Limits: no actualOracle/AIX/iWay/WebFOCUS/APEX runtime,productionTLS/identity/HA/load,Safari/Firefox/pentest. No SLA/readiness/personalsuitabilitygrade. Actual context and authority must be established onjob.
+
+## GitHub verification
+
+[Default CI](https://github.com/phlppgdfry/ico-role-execution/actions/runs/37552644079) completed successfully. [Full actual WildFly/WAR/lifecycle CI](https://github.com/phlppgdfry/ico-role-execution/actions/runs/37552862580) also completed successfully on Ubuntu with Java21. Local Java source was then consistently formatted and recompiled:25 tests,0failures/0errors. This formatting changes no business behaviour.

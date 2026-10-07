@@ -89,7 +89,11 @@ def main():
         value=dict(events=dict(counter),non_json_lines=bad)
     elif args.command=='release-manifest':
         artifact=ROOT/'target/terminal-flow.war';digest=hashlib.sha256(artifact.read_bytes()).hexdigest();rev=subprocess.run(['git','rev-parse','HEAD'],capture_output=True,text=True).stdout.strip() or 'uncommitted-lab'
-        value=dict(release='1.4.0',artifact='terminal-flow.war',sha256=digest,bytes=artifact.stat().st_size,revision=rev,mapping_versions=['1','2'],schema_versions=[1,2],simulation=True)
+        source=hashlib.sha256()
+        for file in sorted([ROOT/'pom.xml',*(ROOT/'src/main').rglob('*')]):
+            if file.is_file():source.update(str(file.relative_to(ROOT)).encode()+b'\0'+file.read_bytes())
+        dirty=bool(subprocess.run(['git','status','--porcelain','--','src/main','pom.xml'],capture_output=True,text=True).stdout.strip())
+        value=dict(release='1.4.0',artifact='terminal-flow.war',sha256=digest,bytes=artifact.stat().st_size,revision=rev,source_sha256=source.hexdigest(),source_git_dirty=dirty,mapping_versions=['1','2'],schema_versions=[1,2],simulation=True)
         (RUN/'release-manifest.json').write_text(json.dumps(value,indent=2)+'\n')
     else:
         if args.command=='request':
