@@ -20,4 +20,3 @@ Contract samples, negative tests, oldest-age alert, commit/ACK separation, uniqu
 
 ---
 **Assumption / realistic simulation.** Fictieve terminal, rollen, tijdlijnen en beslissingen; geen ICO-feiten, dienstverband of werkelijk verzonden communicatie. Werkelijk testbewijs staat afzonderlijk in `docs/testing/verification.md`.
-

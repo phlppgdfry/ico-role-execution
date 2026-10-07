@@ -1,0 +1,5 @@
+project,priority,business_outcome,dependency,owner_role,status,context
+TFC-reliability,HIGH,One effect and visible ACK,Partner contract,Development officer,LAB_IMPLEMENTED,SIMULATION
+Terminal-cutover,HIGH,Consistent keyset migration,TOS product discovery,Project coordinator,REHEARSAL_ONLY,SIMULATION
+Error-lookup,MEDIUM,Explainable bounded diagnosis,DBA workload measurement,Data owner,ADDITIVE_LAB_CHANGE,SIMULATION
+Product-port,MEDIUM,Verify Oracle AIX iWay WebFOCUS APEX,Sandbox licensing and real versions,IT supervisor,PROPOSED,SIMULATION

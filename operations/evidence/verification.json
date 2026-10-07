@@ -1,0 +1,56 @@
+{
+  "verified_at": "2026-10-07T00:31:45.667589+00:00",
+  "simulation_data": true,
+  "artifact": "terminal-flow.war",
+  "sha256": "05accc3edf1512424ceb0b1a1e30ddd4587b202e62147f9336834632857dbb7d",
+  "checks": [
+    {
+      "name": "Java domain/concurrency/database/security",
+      "command": "mvn -B -ntp package (latest actual Surefire report)",
+      "tests": 25,
+      "failures": 0,
+      "errors": 0,
+      "exit_code": 0,
+      "report_sha256": "3cf865e5e272cb9bc7cb6331ab411739f3d238ece1b4cfb348244c7f32f29548"
+    },
+    {
+      "name": "HTTP fast local",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3 -m unittest discover -s tests/acceptance -v",
+      "tests": 7,
+      "exit_code": 0,
+      "elapsed_seconds": 3.03
+    },
+    {
+      "name": "HTTP actual WildFly WAR",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3 deployment/scripts/wildfly_lab.py test",
+      "tests": 7,
+      "exit_code": 0,
+      "elapsed_seconds": 3.04
+    },
+    {
+      "name": "Migration/restore/cutover",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3 -m unittest discover -s tests -p test_maintenance.py -v",
+      "tests": 3,
+      "exit_code": 0,
+      "elapsed_seconds": 2.06
+    },
+    {
+      "name": "Operational automations",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3 tests/check_scripts.py",
+      "tests": 7,
+      "exit_code": 0,
+      "elapsed_seconds": 0.98
+    },
+    {
+      "name": "Browser task/mobile",
+      "command": "npm run test:ui",
+      "tests": 2,
+      "exit_code": 0,
+      "elapsed_seconds": 3.71
+    },
+    {
+      "name": "Vacancy/doc links/spec/schema/known-secret audit",
+      "exit_code": 0
+    }
+  ]
+}

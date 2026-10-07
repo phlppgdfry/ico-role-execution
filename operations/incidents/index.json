@@ -1,0 +1,82 @@
+[
+  {
+    "id": "INC-001",
+    "title": "Partnerberichten ontvangen maar niet verwerkt",
+    "severity": "SEV2",
+    "status": "RESOLVED_SCENARIO",
+    "document": "docs/incidents/INC-001-worker-stalled.md",
+    "simulation": true
+  },
+  {
+    "id": "INC-002",
+    "title": "API geeft HTTP 500 na ongeldige schemawijziging",
+    "severity": "SEV2",
+    "status": "RESOLVED_SCENARIO",
+    "document": "docs/incidents/INC-002-api-500-schema.md",
+    "simulation": true
+  },
+  {
+    "id": "INC-003",
+    "title": "Langzame diagnosequery / indexpad controleren",
+    "severity": "SEV3",
+    "status": "RESOLVED_SCENARIO",
+    "document": "docs/incidents/INC-003-slow-query.md",
+    "simulation": true
+  },
+  {
+    "id": "INC-004",
+    "title": "Deployment start niet met verkeerde credentialconfig",
+    "severity": "SEV2",
+    "status": "RESOLVED_SCENARIO",
+    "document": "docs/incidents/INC-004-deployment-auth-config.md",
+    "simulation": true
+  },
+  {
+    "id": "INC-005",
+    "title": "Nieuwe partnerlocatiecode wordt afgewezen",
+    "severity": "SEV2",
+    "status": "RESOLVED_SCENARIO",
+    "document": "docs/incidents/INC-005-mapping-fails.md",
+    "simulation": true
+  },
+  {
+    "id": "INC-006",
+    "title": "Partner-ACK faalt na geslaagde businesscommit",
+    "severity": "SEV2",
+    "status": "RESOLVED_SCENARIO",
+    "document": "docs/incidents/INC-006-ack-timeout.md",
+    "simulation": true
+  },
+  {
+    "id": "INC-007",
+    "title": "Dubbele verzending wordt voor dubbele voertuigen aangezien",
+    "severity": "SEV3",
+    "status": "RESOLVED_SCENARIO",
+    "document": "docs/incidents/INC-007-duplicate-deliveries.md",
+    "simulation": true
+  },
+  {
+    "id": "INC-008",
+    "title": "Service account-token geweigerd / scope mismatch",
+    "severity": "SEV3",
+    "status": "RESOLVED_SCENARIO",
+    "document": "docs/incidents/INC-008-token-rejected.md",
+    "simulation": true
+  },
+  {
+    "id": "INC-009",
+    "title": "Rapportcijfers wijken af door eventjoin",
+    "severity": "SEV3",
+    "status": "RESOLVED_SCENARIO",
+    "document": "docs/incidents/INC-009-report-inconsistent.md",
+    "simulation": true
+  },
+  {
+    "id": "INC-010",
+    "title": "Applicatiepad unavailable met gecontroleerde recovery",
+    "severity": "SEV2",
+    "status": "RESOLVED_SCENARIO",
+    "document": "docs/incidents/INC-010-application-unavailable.md",
+    "simulation": true
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "vin": "DEMO0000000000001",
+    "site_id": "ZEE",
+    "partner_id": "ALPHA",
+    "location_id": "ZEE-A01",
+    "state": "ACTIVE",
+    "version": 1
+  },
+  {
+    "vin": "DEMO0000000000002",
+    "site_id": "KAL",
+    "partner_id": "ALPHA",
+    "location_id": "KAL-B01",
+    "state": "ACTIVE",
+    "version": 1
+  }
+]

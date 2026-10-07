@@ -1,0 +1,10 @@
+[
+  {
+    "vin": "DEMO0000000000001",
+    "site_id": "ZEE",
+    "partner_id": "ALPHA",
+    "location_id": "ZEE-A02",
+    "state": "ACTIVE",
+    "version": 1
+  }
+]

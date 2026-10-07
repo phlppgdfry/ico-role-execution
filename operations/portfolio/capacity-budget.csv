@@ -1,0 +1,7 @@
+wp,planned_hours,actual_hours,remaining_hours,forecast_hours,rate_eur,forecast_eur,context
+WP1,12,12,0,12,80,960,SIMULATION
+WP2,18,16,4,20,80,1600,SIMULATION
+WP3,24,20,10,30,90,2700,SIMULATION
+WP4,18,12,6,18,80,1440,SIMULATION
+WP5,16,8,10,18,90,1620,SIMULATION
+WP6,8,2,6,8,70,560,SIMULATION

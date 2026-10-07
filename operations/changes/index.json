@@ -1,0 +1,20 @@
+[
+  {
+    "id": "CHG-001",
+    "path": "docs/changes/CHG-001-retry-and-replay.md",
+    "approval": "PROPOSED_LAB_REHEARSAL",
+    "simulation": true
+  },
+  {
+    "id": "CHG-002",
+    "path": "docs/changes/CHG-002-database-index-optimization.md",
+    "approval": "PROPOSED_LAB_REHEARSAL",
+    "simulation": true
+  },
+  {
+    "id": "CHG-003",
+    "path": "docs/changes/CHG-003-update-integration-mapping.md",
+    "approval": "PROPOSED_LAB_REHEARSAL",
+    "simulation": true
+  }
+]

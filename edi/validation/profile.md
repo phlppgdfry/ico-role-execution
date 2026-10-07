@@ -8,4 +8,3 @@ Mapping v1 requires exact location code. v2 supports only the two prefixes repre
 
 ---
 **Assumption / realistic simulation.** Fictieve terminal, rollen, tijdlijnen en beslissingen; geen ICO-feiten, dienstverband of werkelijk verzonden communicatie. Werkelijk testbewijs staat afzonderlijk in `docs/testing/verification.md`.
-

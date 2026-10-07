@@ -1,0 +1,3 @@
+{"timestamp": "2026-10-07T00:29:19.052664Z", "event": "message.committed", "correlation_id": "49a57f09-9352-4904-a9da-5e5d312d67d0", "site": "ZEE", "version": 1}
+{"timestamp": "2026-10-07T00:29:19.055867Z", "event": "ack.failed", "correlation_id": "49a57f09-9352-4904-a9da-5e5d312d67d0", "attempt": 1, "error_code": "ACK_TIMEOUT_OR_UNAVAILABLE"}
+{"timestamp": "2026-10-07T00:29:19.061046Z", "event": "ack.sent", "correlation_id": "49a57f09-9352-4904-a9da-5e5d312d67d0", "attempt": 2}

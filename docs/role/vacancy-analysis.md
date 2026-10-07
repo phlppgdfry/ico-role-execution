@@ -23,7 +23,7 @@ Arbeidsvoorwaarden vermeld: maaltijd/ecocheques, groeps- en hospitalisatieverzek
 | Programmeertalen | Geen expliciete programmeertaal; N/E/F zijn menselijke talen | Java 21, Python 3, kleine vanilla JS-portal |
 | Database | Oracle | H2 met JDBC, Oracle-compatibility mode; geen echte Oracle-test |
 | OS/hardware | AIX / IBM P-series | Lokale macOS/Linux; AIX-runbook beperkt tot conceptoverdracht |
-| Application server | JBoss | Echt Servlet-WAR; WildFly 39 als reproduceerbare JBoss-familie labserver |
+| Application server | JBoss | Echt Servlet-WAR; WildFly EE10 41.0.1 als reproduceerbare JBoss-familie labserver |
 | Framework | Apex genoemd, waarschijnlijk Oracle APEX | Portal-equivalent + portingplan; geen fictief APEX-export |
 | API/protocol | Geen API-type of EDI-standaard benoemd | JSON-over-HTTP en OpenAPI 3.1; HMAC-ACK |
 | Middleware | iWay | In-process integration worker met mapping, retries en message journal |

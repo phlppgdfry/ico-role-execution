@@ -1,0 +1,16 @@
+{
+  "release": "1.4.0",
+  "artifact": "terminal-flow.war",
+  "sha256": "05accc3edf1512424ceb0b1a1e30ddd4587b202e62147f9336834632857dbb7d",
+  "bytes": 4810130,
+  "revision": "9abb056ff01349062c9055bf0d4ffc9414c9b4ec",
+  "mapping_versions": [
+    "1",
+    "2"
+  ],
+  "schema_versions": [
+    1,
+    2
+  ],
+  "simulation": true
+}

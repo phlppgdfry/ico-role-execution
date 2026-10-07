@@ -1,0 +1,182 @@
+[
+  {
+    "id": "TKT-001",
+    "type": "INCIDENT",
+    "priority": "HIGH",
+    "title": "Worker backlog ZEE",
+    "status": "RESOLVED_SCENARIO",
+    "path": "operations/tickets/TKT-001.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-002",
+    "type": "BUG",
+    "priority": "HIGH",
+    "title": "Missing schema yields500",
+    "status": "RESOLVED_SCENARIO",
+    "path": "operations/tickets/TKT-002.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-003",
+    "type": "INVESTIGATION",
+    "priority": "MEDIUM",
+    "title": "Explain errorlookup performance",
+    "status": "IN_REVIEW_SCENARIO",
+    "path": "operations/tickets/TKT-003.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-004",
+    "type": "ACCESS",
+    "priority": "HIGH",
+    "title": "Incomplete deploy credentials",
+    "status": "RESOLVED_SCENARIO",
+    "path": "operations/tickets/TKT-004.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-005",
+    "type": "CHANGE",
+    "priority": "HIGH",
+    "title": "Mapping alias2",
+    "status": "LAB_IMPLEMENTED",
+    "path": "operations/tickets/TKT-005.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-006",
+    "type": "INCIDENT",
+    "priority": "HIGH",
+    "title": "Missing callback ACK",
+    "status": "RESOLVED_SCENARIO",
+    "path": "operations/tickets/TKT-006.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-007",
+    "type": "DATA",
+    "priority": "MEDIUM",
+    "title": "Duplicate transport review",
+    "status": "RESOLVED_SCENARIO",
+    "path": "operations/tickets/TKT-007.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-008",
+    "type": "ACCESS",
+    "priority": "MEDIUM",
+    "title": "BETA scope request",
+    "status": "RESOLVED_SCENARIO",
+    "path": "operations/tickets/TKT-008.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-009",
+    "type": "DATA",
+    "priority": "MEDIUM",
+    "title": "Report grain contract",
+    "status": "LAB_IMPLEMENTED",
+    "path": "operations/tickets/TKT-009.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-010",
+    "type": "INCIDENT",
+    "priority": "HIGH",
+    "title": "503 availability rehearsal",
+    "status": "RESOLVED_SCENARIO",
+    "path": "operations/tickets/TKT-010.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-011",
+    "type": "REQUIREMENT",
+    "priority": "HIGH",
+    "title": "Location correction",
+    "status": "LAB_IMPLEMENTED",
+    "path": "operations/tickets/TKT-011.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-012",
+    "type": "REQUIREMENT",
+    "priority": "HIGH",
+    "title": "Business hold controls",
+    "status": "LAB_IMPLEMENTED",
+    "path": "operations/tickets/TKT-012.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-013",
+    "type": "MAINTENANCE",
+    "priority": "MEDIUM",
+    "title": "Fresh-target restore rehearsal",
+    "status": "LAB_IMPLEMENTED",
+    "path": "operations/tickets/TKT-013.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-014",
+    "type": "CHANGE",
+    "priority": "HIGH",
+    "title": "Independent ACK scheduling",
+    "status": "LAB_IMPLEMENTED",
+    "path": "operations/tickets/TKT-014.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-015",
+    "type": "CHANGE",
+    "priority": "MEDIUM",
+    "title": "Add errorindex",
+    "status": "LAB_IMPLEMENTED",
+    "path": "operations/tickets/TKT-015.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-016",
+    "type": "INVESTIGATION",
+    "priority": "HIGH",
+    "title": "Real product inventory",
+    "status": "PROPOSED",
+    "path": "operations/tickets/TKT-016.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-017",
+    "type": "DOCUMENTATION",
+    "priority": "MEDIUM",
+    "title": "Service Desk handover",
+    "status": "SCENARIO_COMPLETE",
+    "path": "operations/tickets/TKT-017.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-018",
+    "type": "MAINTENANCE",
+    "priority": "MEDIUM",
+    "title": "Alert owner review",
+    "status": "LAB_IMPLEMENTED",
+    "path": "operations/tickets/TKT-018.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-019",
+    "type": "RELEASE",
+    "priority": "HIGH",
+    "title": "WAR1.4.0 go/no-go",
+    "status": "LAB_REHEARSED",
+    "path": "operations/tickets/TKT-019.md",
+    "simulation": true
+  },
+  {
+    "id": "TKT-020",
+    "type": "REQUIREMENT",
+    "priority": "HIGH",
+    "title": "New-TOS cutovergate",
+    "status": "LAB_IMPLEMENTED",
+    "path": "operations/tickets/TKT-020.md",
+    "simulation": true
+  }
+]
