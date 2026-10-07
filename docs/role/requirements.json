@@ -1,0 +1,352 @@
+[
+  {
+    "id": "R01",
+    "text": "Permanente functie, Zeebrugge, 38 uur",
+    "meaning": "Een vaste rol met planning over meerdere projecten.",
+    "practice": "Plan capaciteit op 38 uur; reserveer interruptieruimte.",
+    "difficulty": "Basiskennis",
+    "importance": "Hoog",
+    "artifact": "docs/role/role-operating-manual.md",
+    "proof_type": "context / review"
+  },
+  {
+    "id": "R02",
+    "text": "IT-master of bachelor gelijkgesteld door ervaring",
+    "meaning": "Toon theoretische basis én toepasbare ervaring; precieze diploma-equivalentie navragen.",
+    "practice": "Koppel opleiding en projecten aan analyse, systemen en delivery.",
+    "difficulty": "Intermediate",
+    "importance": "Hoog",
+    "artifact": "docs/role/vacancy-analysis.md",
+    "proof_type": "context / review"
+  },
+  {
+    "id": "R03",
+    "text": "Dagshift, beperkte verplaatsingen en wachtdienst",
+    "meaning": "Regulier dagwerk met beschikbaarheidsverplichtingen; rooster onbekend.",
+    "practice": "Vraag oproepfrequentie, compensatie, toegang en escalatiedekking.",
+    "difficulty": "Intermediate",
+    "importance": "Kritiek",
+    "artifact": "docs/runbooks/on-call-handover.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R04",
+    "text": "Integriteit, intensiteit, innovatie",
+    "meaning": "Eerlijk rapporteren, zorgvuldig afwerken en nuttig verbeteren.",
+    "practice": "Meld risico’s vroeg; beloof geen onbewezen oplossing.",
+    "difficulty": "Intermediate",
+    "importance": "Hoog",
+    "artifact": "docs/role/top-performer-guide.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R05",
+    "text": "Arbeidsvoorwaarden en opleidingsmogelijkheden",
+    "meaning": "Maaltijd/ecocheques, verzekeringen, GSM/laptop, wagen, vergoeding en cafetariaplan worden genoemd.",
+    "practice": "Vraag voorwaarden, budget en praktische opleidingstijd.",
+    "difficulty": "Beginner",
+    "importance": "Middel",
+    "artifact": "docs/onboarding/30-60-90-day-plan.md",
+    "proof_type": "context / review"
+  },
+  {
+    "id": "R06",
+    "text": "Technische projectplannen beheren en rapporteren",
+    "meaning": "Jij organiseert technische uitvoering en afhankelijkheden.",
+    "practice": "Maak mijlpalen, eigenaar, risico’s, planning en wekelijkse status.",
+    "difficulty": "Gevorderd",
+    "importance": "Kritiek",
+    "artifact": "docs/requirements/project-plan.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R07",
+    "text": "Externe bedrijven aansturen",
+    "meaning": "Uitbesteden verwijdert je verantwoordelijkheid voor resultaat niet.",
+    "practice": "Specificeer deliverables, acceptatie, deadlines en escalaties.",
+    "difficulty": "Gevorderd",
+    "importance": "Kritiek",
+    "artifact": "docs/stakeholders/vendor-work-package.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R08",
+    "text": "Core-systemen en nieuw Terminal Systeem",
+    "meaning": "Continuïteit van huidige applicaties naast verandering.",
+    "practice": "Leg datastromen vast; plan migratie, test en herstel.",
+    "difficulty": "Gevorderd",
+    "importance": "Kritiek",
+    "artifact": "docs/releases/cutover-rehearsal.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R09",
+    "text": "Kwaliteit, veiligheid en milieu ondersteunen",
+    "meaning": "IT-keuzes hebben operationele gevolgen.",
+    "practice": "Bespreek foutieve data, toegang, traceerbaarheid en veilige workarounds.",
+    "difficulty": "Intermediate",
+    "importance": "Hoog",
+    "artifact": "docs/security/safety-quality-environment.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R10",
+    "text": "Specificaties toetsen aan strategie/procedures/standaarden",
+    "meaning": "Een technisch haalbare wijziging moet ook passen in afspraken.",
+    "practice": "Controleer ontwerp, security, lifecycle en changevoorwaarden.",
+    "difficulty": "Gevorderd",
+    "importance": "Hoog",
+    "artifact": "docs/architecture/decisions.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R11",
+    "text": "Bijstaan in behoeftenanalyse",
+    "meaning": "Vraag door naar probleem en gebruikersdoel.",
+    "practice": "Observeer huidige werkwijze; maak acceptatiecriteria.",
+    "difficulty": "Intermediate",
+    "importance": "Kritiek",
+    "artifact": "docs/requirements/business-requirements.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R12",
+    "text": "Lastenboek, werkpakketten en CRQ",
+    "meaning": "CRQ is het change request: waarom, wat, risico en goedkeuring.",
+    "practice": "Beschrijf scope, interfaces, tests, uren, rollout en rollback.",
+    "difficulty": "Gevorderd",
+    "importance": "Kritiek",
+    "artifact": "docs/changes/CHG-001-retry-and-replay.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R13",
+    "text": "Implementatie begeleiden",
+    "meaning": "Delivery controleren tot het werkend in gebruik is.",
+    "practice": "Volg issues en afhankelijkheden; organiseer acceptatie en nazorg.",
+    "difficulty": "Gevorderd",
+    "importance": "Hoog",
+    "artifact": "deployment/deployment-runbook.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R14",
+    "text": "Gebruikers opleiden",
+    "meaning": "Adoptie is deel van technisch succes.",
+    "practice": "Maak taakgerichte demo, oefencases en korte werkinstructie.",
+    "difficulty": "Intermediate",
+    "importance": "Hoog",
+    "artifact": "docs/onboarding/user-training.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R15",
+    "text": "Outsourcing coördineren",
+    "meaning": "Organiseer de grens tussen interne en externe uitvoering.",
+    "practice": "Leg eigenaarschap, toegang, overdracht en exitdocumentatie vast.",
+    "difficulty": "Gevorderd",
+    "importance": "Hoog",
+    "artifact": "docs/stakeholders/vendor-work-package.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R16",
+    "text": "Capaciteit en budget bewaken",
+    "meaning": "Bewaken of inspanning en resultaat nog kloppen.",
+    "practice": "Vergelijk forecast/actual, scope en resterend werk; escaleer afwijkingen.",
+    "difficulty": "Gevorderd",
+    "importance": "Hoog",
+    "artifact": "operations/portfolio/capacity-budget.csv",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R17",
+    "text": "Applicatiecomponenten in kaart brengen/analyseren/evalueren",
+    "meaning": "Ken componenten, afhankelijkheden en kwetsbare punten.",
+    "practice": "Maak componentcatalogus met eigenaar, versie en interface.",
+    "difficulty": "Intermediate",
+    "importance": "Kritiek",
+    "artifact": "docs/architecture/component-catalogue.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R18",
+    "text": "Releases op servers/systemen met partners coördineren",
+    "meaning": "Versies moeten samen compatibel live gaan.",
+    "practice": "Gebruik releasekalender, compatibiliteitsmatrix en go/no-go.",
+    "difficulty": "Gevorderd",
+    "importance": "Kritiek",
+    "artifact": "docs/releases/REL-1.4.0.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R19",
+    "text": "TOS met IBM P-series, AIX, Oracle en JBoss",
+    "meaning": "Bedrijfskritische applicaties op enterpriseplatformen.",
+    "practice": "Traceer gebruiker → applicatie → query; stem platformproblemen af.",
+    "difficulty": "Gevorderd",
+    "importance": "Kritiek",
+    "artifact": "docs/systems/platform-substitutions.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R20",
+    "text": "EDI-processing en rapportering met WebFOCUS/iWay",
+    "meaning": "EDI is gestructureerde gegevensuitwisseling tussen organisaties.",
+    "practice": "Volg bericht van ontvangst tot businessresultaat; controleer rapportdefinities.",
+    "difficulty": "Gevorderd",
+    "importance": "Kritiek",
+    "artifact": "docs/integrations/partner-contract.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R21",
+    "text": "Webportalen opzetten en beheren",
+    "meaning": "Gebruikersinterfaces met lifecycle en toegangsbeheer.",
+    "practice": "Beheer configuratie, permissies, tests, certificaten en releasebewijs.",
+    "difficulty": "Intermediate",
+    "importance": "Hoog",
+    "artifact": "src/main/webapp/index.html",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R22",
+    "text": "Nieuwe functionaliteit en koppelingstools ontwikkelen",
+    "meaning": "Hands-on bouwen maakt deel uit van de functie.",
+    "practice": "Implementeer kleine wijziging met contract, validatie en logging.",
+    "difficulty": "Intermediate",
+    "importance": "Hoog",
+    "artifact": "src/main/java/roleos/TerminalService.java",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R23",
+    "text": "Projectportefeuille beheren",
+    "meaning": "Meerdere projecten concurreren om dezelfde capaciteit.",
+    "practice": "Orden op impact, afhankelijkheden, risico en beschikbare mensen.",
+    "difficulty": "Gevorderd",
+    "importance": "Hoog",
+    "artifact": "operations/portfolio/project-portfolio.csv",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R24",
+    "text": "Afwijkingen proactief vinden en bijsturen",
+    "meaning": "Niet wachten op mislukte oplevering.",
+    "practice": "Vergelijk voortgang met baseline en stel opties met gevolgen voor.",
+    "difficulty": "Intermediate",
+    "importance": "Hoog",
+    "artifact": "docs/stakeholders/weekly-report.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R25",
+    "text": "Tweede lijn incident/problem/change tot afronding",
+    "meaning": "Service Desk draagt complexere applicatieproblemen over.",
+    "practice": "Prioriteer, onderzoek, communiceer, herstel en documenteer oorzaak.",
+    "difficulty": "Gevorderd",
+    "importance": "Kritiek",
+    "artifact": "docs/incidents/INC-001-worker-stalled.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R26",
+    "text": "Wekelijks IT en business rapporteren",
+    "meaning": "Vertaal techniek naar voortgang en impact.",
+    "practice": "Meld resultaat, risico, budget/capaciteit, besluit en volgende stap.",
+    "difficulty": "Intermediate",
+    "importance": "Hoog",
+    "artifact": "docs/stakeholders/weekly-report.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R27",
+    "text": "Intern/extern ontwikkelingsteam en training nieuwe collega’s",
+    "meaning": "Technische samenwerking en taakgerichte sturing.",
+    "practice": "Doe review, overdracht en begeleid een collega met echte oefencase.",
+    "difficulty": "Intermediate",
+    "importance": "Hoog",
+    "artifact": "docs/onboarding/buddy-plan.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R28",
+    "text": "IT-evoluties volgen; technische kennis en analyse",
+    "meaning": "Maak passende verbeterkeuzes, geen technologie om zichzelf.",
+    "practice": "Vergelijk lifecycle, kosten en operationele haalbaarheid.",
+    "difficulty": "Intermediate",
+    "importance": "Hoog",
+    "artifact": "docs/architecture/lifecycle-review.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R29",
+    "text": "PRINCE2 of andere projectmethode",
+    "meaning": "Methodisch plannen, beslissen en risico’s beheersen.",
+    "practice": "Gebruik businesscase, fasering en tolerantie; certificaat niet expliciet vereist.",
+    "difficulty": "Intermediate",
+    "importance": "Hoog",
+    "artifact": "docs/requirements/project-plan.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R30",
+    "text": "MS Office en gerelateerde producten",
+    "meaning": "Praktische analyse, rapportage en communicatie.",
+    "practice": "Gebruik Excel voor reconciliatie, Word voor CRQ, presentatie voor opleiding.",
+    "difficulty": "Basiskennis",
+    "importance": "Middel",
+    "artifact": "operations/portfolio/capacity-budget.csv",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R31",
+    "text": "Apex",
+    "meaning": "Waarschijnlijk Oracle APEX gezien Oracle-stack; verifiëren.",
+    "practice": "Oefen formulieren, SQL-rapporten, validatie en rechten.",
+    "difficulty": "Intermediate",
+    "importance": "Hoog",
+    "artifact": "docs/systems/apex-porting-plan.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R32",
+    "text": "Talen N/E/F",
+    "meaning": "Waarschijnlijk Nederlands/Engels/Frans; niveau onbekend.",
+    "practice": "Leg incident uit, lees documentatie en voer leveranciersoverleg.",
+    "difficulty": "Intermediate",
+    "importance": "Hoog",
+    "artifact": "docs/stakeholders/multilingual-updates.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R33",
+    "text": "Communiceren, organiseren, stress en taakgericht leidinggeven",
+    "meaning": "Techniek en mensen onder druk op één resultaat richten.",
+    "practice": "Prioriteer transparant; benoem eigenaar en updatefrequentie.",
+    "difficulty": "Gevorderd",
+    "importance": "Kritiek",
+    "artifact": "docs/role/role-operating-manual.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R34",
+    "text": "Supervisor/Director IT; projectcoördinator/business/klanten/leveranciers",
+    "meaning": "Beslissen gebeurt in een netwerk van stakeholders.",
+    "practice": "Maak beslisrechten, escalatie en communicatie per doelgroep duidelijk.",
+    "difficulty": "Intermediate",
+    "importance": "Hoog",
+    "artifact": "docs/stakeholders/raci.md",
+    "proof_type": "execution / simulation"
+  },
+  {
+    "id": "R35",
+    "text": "Applicatieomgevingen Kallo én Zeebrugge",
+    "meaning": "Wijzigingen kunnen meerdere locaties raken.",
+    "practice": "Test locatieconfiguratie en operationele afhankelijkheden per site.",
+    "difficulty": "Gevorderd",
+    "importance": "Kritiek",
+    "artifact": "tests/acceptance/test_live_api.py",
+    "proof_type": "execution / simulation"
+  }
+]
