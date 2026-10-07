@@ -4,7 +4,7 @@ Dit document registreert werkelijk uitgevoerde tests, niet fictieve operationele
 
 UTC: 2026-10-07T00:31:45.667589+00:00
 
-WAR SHA256: `05accc3edf1512424ceb0b1a1e30ddd4587b202e62147f9336834632857dbb7d`
+Initial full verification WAR SHA256: `05accc3edf1512424ceb0b1a1e30ddd4587b202e62147f9336834632857dbb7d`
 
 | Check | Tests/checks | Exit | Resultaat |
 |---|---:|---:|---|
@@ -25,3 +25,7 @@ Limits: no actualOracle/AIX/iWay/WebFOCUS/APEX runtime,productionTLS/identity/HA
 ## GitHub verification
 
 [Default CI](https://github.com/phlppgdfry/ico-role-execution/actions/runs/37552644079) completed successfully. [Full actual WildFly/WAR/lifecycle CI](https://github.com/phlppgdfry/ico-role-execution/actions/runs/37552862580) also completed successfully on Ubuntu with Java21. Local Java source was then consistently formatted and recompiled:25 tests,0failures/0errors. This formatting changes no business behaviour.
+
+## Final release candidate
+
+Revision `b53e5b3fcfd3b679e40c445cbae24ab4f440f445`, actual released WAR SHA256 `9be7028f17c908804edbf4fbde5de8dd922c36fce3ae60daa1b3f00ec3489e9c`. Source SHA256 `068fbd4042dba8fc746f2efe76a439933e42288b6dc7ff11f59122fb8b14e3cc`, source clean. After the last strict contract fix:25Java tests passed;actualWildFlyundeploy/redeploy and all7HTTP acceptance passed;numericmapping_version returned400on the deployedartifact. [Latest CI](https://github.com/phlppgdfry/ico-role-execution/actions/runs/37553530600) completed successfully. [Release manifest](../../operations/releases/REL-1.4.0-manifest.json) is authoritative for the finalartifact;earlier testbundle above remains historicalactualevidence.

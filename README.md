@@ -82,6 +82,8 @@ Full [product substitution matrix](docs/systems/platform-substitutions.md). No K
 
 ## Deployment
 
+[Download verified release1.4.0 (WAR + manifest)](https://github.com/phlppgdfry/ico-role-execution/releases/tag/v1.4.0). A WAR needs the documented applicationserver; it is not a standalone desktopapp.
+
 Requirements: JDK 21, Maven 3, Python 3.10+. Node 22 only for optional browser acceptance. Commands run from repository root. No Docker required.
 
 ```sh

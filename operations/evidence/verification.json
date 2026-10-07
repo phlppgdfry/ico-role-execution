@@ -52,5 +52,18 @@
       "name": "Vacancy/doc links/spec/schema/known-secret audit",
       "exit_code": 0
     }
-  ]
+  ],
+  "release_candidate": {
+    "verified_at": "2026-10-07T00:47:07.801407+00:00",
+    "revision": "b53e5b3fcfd3b679e40c445cbae24ab4f440f445",
+    "war_sha256": "9be7028f17c908804edbf4fbde5de8dd922c36fce3ae60daa1b3f00ec3489e9c",
+    "source_sha256": "068fbd4042dba8fc746f2efe76a439933e42288b6dc7ff11f59122fb8b14e3cc",
+    "java_tests": 25,
+    "java_failures": 0,
+    "wildfly_http_tests": 7,
+    "wildfly_http_failures": 0,
+    "actual_undeploy_redeploy": "PASS",
+    "numeric_control_contract": "400_VALIDATION_ERROR",
+    "ci": "https://github.com/phlppgdfry/ico-role-execution/actions/runs/37553530600"
+  }
 }

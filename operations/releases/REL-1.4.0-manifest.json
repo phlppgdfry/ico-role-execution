@@ -1,9 +1,11 @@
 {
   "release": "1.4.0",
   "artifact": "terminal-flow.war",
-  "sha256": "05accc3edf1512424ceb0b1a1e30ddd4587b202e62147f9336834632857dbb7d",
-  "bytes": 4810130,
-  "revision": "9abb056ff01349062c9055bf0d4ffc9414c9b4ec",
+  "sha256": "9be7028f17c908804edbf4fbde5de8dd922c36fce3ae60daa1b3f00ec3489e9c",
+  "bytes": 4812564,
+  "revision": "b53e5b3fcfd3b679e40c445cbae24ab4f440f445",
+  "source_sha256": "068fbd4042dba8fc746f2efe76a439933e42288b6dc7ff11f59122fb8b14e3cc",
+  "source_git_dirty": false,
   "mapping_versions": [
     "1",
     "2"
