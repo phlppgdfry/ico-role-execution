@@ -204,6 +204,9 @@ class ExecutionTest {
 
   @Test
   void mappingFixAndAuthorizedRedriveAreAudited() {
+    assertThrows(
+        ApiError.class,
+        () -> service.controls(Json.read("{\"mapping_version\":2}"), actor("ADMIN"), "bad-type"));
     var r =
         service.accept(event("A1", "ARRIVAL", "ZEE", "ZEE-A-01", 0, VIN), actor("ALPHA"), "test");
     service.processOnce();

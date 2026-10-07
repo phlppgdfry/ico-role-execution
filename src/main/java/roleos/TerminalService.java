@@ -381,6 +381,7 @@ public final class TerminalService {
             : Set.of("expected_version", "location", "reason"));
     String reason = Json.required(n, "reason", 200);
     int expected = Json.version(n);
+    if (hold && n.has("decision_ref")) Json.required(n, "decision_ref", 32);
     try (Connection c = db.open()) {
       c.setAutoCommit(false);
       try {
@@ -458,7 +459,8 @@ public final class TerminalService {
           String key = entry.getKey(), value = entry.getValue().asText();
           if (flags.contains(key) && !entry.getValue().isBoolean())
             throw new ApiError(400, "VALIDATION_ERROR", "Control must be boolean");
-          if (key.equals("mapping_version") && !Set.of("1", "2").contains(value))
+          if (key.equals("mapping_version")
+              && (!entry.getValue().isTextual() || !Set.of("1", "2").contains(value)))
             throw new ApiError(400, "VALIDATION_ERROR", "mapping_version must be 1 or 2");
           String before = db.control(key, key.equals("mapping_version") ? "1" : "false");
           update(c, "MERGE INTO controls KEY(control_name) VALUES (?,?)", key, value);
