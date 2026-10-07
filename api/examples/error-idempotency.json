@@ -1,0 +1,5 @@
+{
+  "error": "IDEMPOTENCY_CONFLICT",
+  "message": "Same event_key with different business payload",
+  "correlation_id": "example-request"
+}

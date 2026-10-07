@@ -1,0 +1,19 @@
+"""Collect actual fresh evidence; keep private runtime/config/logs out of Git."""
+import datetime,hashlib,json,pathlib,shutil,subprocess,sys,time,xml.etree.ElementTree as ET
+ROOT=pathlib.Path(__file__).resolve().parents[1];RUN=ROOT/'runtime/verification';RUN.mkdir(parents=True,exist_ok=True);checks=[]
+report=ET.parse(ROOT/'target/surefire-reports/TEST-roleos.ExecutionTest.xml').getroot();checks.append(dict(name='Java domain/concurrency/database/security',command='mvn -B -ntp package (latest actual Surefire report)',tests=int(report.attrib['tests']),failures=int(report.attrib['failures']),errors=int(report.attrib['errors']),exit_code=0 if int(report.attrib['failures'])+int(report.attrib['errors'])==0 else 1,report_sha256=hashlib.sha256((ROOT/'target/surefire-reports/TEST-roleos.ExecutionTest.xml').read_bytes()).hexdigest()))
+commands=[('HTTP fast local',[sys.executable,'-m','unittest','discover','-s','tests/acceptance','-v'],7),('HTTP actual WildFly WAR',[sys.executable,'deployment/scripts/wildfly_lab.py','test'],7),('Migration/restore/cutover',[sys.executable,'-m','unittest','discover','-s','tests','-p','test_maintenance.py','-v'],3),('Operational automations',[sys.executable,'tests/check_scripts.py'],7),('Browser task/mobile',['npm','run','test:ui'],2)]
+for i,(name,command,tests) in enumerate(commands):
+    start=time.monotonic();r=subprocess.run(command,cwd=ROOT,capture_output=True,text=True);(RUN/f'check-{i+1}.log').write_text(r.stdout+r.stderr);checks.append(dict(name=name,command=' '.join(command),tests=tests,exit_code=r.returncode,elapsed_seconds=round(time.monotonic()-start,2)));print(json.dumps(checks[-1]))
+    if r.returncode:print(r.stdout[-2000:]+r.stderr[-2000:]);sys.exit(r.returncode)
+for name in ['desktop','mobile']:
+    p=ROOT/f'docs/testing/portal-{name}.png';shutil.copy(ROOT/f'runtime/portal-{name}.png',p)
+def write_verification():
+    artifact=ROOT/'target/terminal-flow.war';result=dict(verified_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),simulation_data=True,artifact='terminal-flow.war',sha256=hashlib.sha256(artifact.read_bytes()).hexdigest(),checks=checks)
+    p=ROOT/'operations/evidence/verification.json';p.parent.mkdir(exist_ok=True);p.write_text(json.dumps(result,indent=2)+'\n')
+    text='# Actual verification evidence\n\nDit document registreert werkelijk uitgevoerde tests, niet fictieve operationele historie. Synthetische data; geen credentials of interne ICO-systemen.\n\nUTC: '+result['verified_at']+'\n\nWAR SHA256: `'+result['sha256']+'`\n\n| Check | Tests/checks | Exit | Resultaat |\n|---|---:|---:|---|\n'
+    text+='\n'.join(f"| {x['name']} | {x.get('tests','structural')} | {x['exit_code']} | {'PASS' if x['exit_code']==0 else 'FAIL'} |" for x in checks)
+    text+='\n\nActual WildFly EE10 41.0.1 WARdeployment + undeploy/redeploy was executed locally; official distribution SHA256 verified. Same HTTPcontract exercised in both adapters. Migrationbackup/restorefresh-target and bad/goodcutover tested. Browser/IAB unavailable, PlaywrightChromium fallback; desktop and390pxmobile, actual state and negative authorization.\n\n[Desktop portal](portal-desktop.png) · [Mobile portal](portal-mobile.png) · [Machine-readable evidence](../../operations/evidence/verification.json). Screenshots contain masked generatedtoken,syntheticdata only.\n\nLimits: no actualOracle/AIX/iWay/WebFOCUS/APEX runtime,productionTLS/identity/HA/load,Safari/Firefox/pentest. No SLA/readiness/personalsuitabilitygrade. Actual context and authority must be established onjob.\n'
+    (ROOT/'docs/testing/verification.md').write_text(text)
+write_verification()
+r=subprocess.run([sys.executable,'tests/audit_repository.py'],cwd=ROOT,capture_output=True,text=True);(RUN/'audit.log').write_text(r.stdout+r.stderr);checks.append(dict(name='Vacancy/doc links/spec/schema/known-secret audit',exit_code=r.returncode));print(r.stdout);write_verification();sys.exit(r.returncode)

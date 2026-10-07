@@ -1,0 +1,11 @@
+{
+  "message_id": "transport-badmap",
+  "event_key": "ARR-BAD-MAP",
+  "partner_id": "ALPHA",
+  "site_id": "ZEE",
+  "vin": "DEMO0000000000003",
+  "event_type": "ARRIVAL",
+  "location": "ZEE-A-01",
+  "event_at": "2026-09-28T08:00:00Z",
+  "expected_version": 0
+}

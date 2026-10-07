@@ -1,0 +1,11 @@
+{
+  "message_id": "transport-002",
+  "event_key": "MOVE-001",
+  "partner_id": "ALPHA",
+  "site_id": "ZEE",
+  "vin": "DEMO0000000000001",
+  "event_type": "MOVE",
+  "location": "ZEE-A02",
+  "event_at": "2026-09-28T08:05:00Z",
+  "expected_version": 1
+}

@@ -1,0 +1,11 @@
+{
+  "message_id": "transport-kallo",
+  "event_key": "ARR-KAL-001",
+  "partner_id": "ALPHA",
+  "site_id": "KAL",
+  "vin": "DEMO0000000000002",
+  "event_type": "ARRIVAL",
+  "location": "KAL-B01",
+  "event_at": "2026-09-28T08:00:00Z",
+  "expected_version": 0
+}

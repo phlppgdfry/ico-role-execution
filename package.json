@@ -1,0 +1,1 @@
+{"name":"terminal-flow-ui-acceptance","private":true,"type":"module","scripts":{"test:ui":"playwright test --config tests/ui/playwright.config.mjs"},"devDependencies":{"@playwright/test":"1.63.0"}}

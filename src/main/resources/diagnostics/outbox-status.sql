@@ -1,0 +1,1 @@
+SELECT o.message_id,m.event_key,m.status AS business_status,o.status AS ack_status,o.attempts,o.last_error,o.created_at,o.sent_at FROM outbox o JOIN messages m ON m.id=o.message_id ORDER BY o.created_at DESC FETCH FIRST 200 ROWS ONLY;

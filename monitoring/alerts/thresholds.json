@@ -1,0 +1,42 @@
+[
+  {
+    "name": "processing_stalled",
+    "metric": "oldest_pending_seconds",
+    "threshold": 30,
+    "severity": "WARNING",
+    "owner": "integration-oncall",
+    "action": "Check worker/last success; do not bulk replay"
+  },
+  {
+    "name": "queue_depth",
+    "metric": "messages_received",
+    "threshold": 50,
+    "severity": "WARNING",
+    "owner": "application-owner",
+    "action": "Compare input volume and consumption"
+  },
+  {
+    "name": "open_rejections",
+    "metric": "messages_rejected",
+    "threshold": 1,
+    "severity": "TRIAGE",
+    "owner": "integration-owner",
+    "action": "Inspect error codes; expected training rejects may be acknowledged"
+  },
+  {
+    "name": "exhausted_retries",
+    "metric": "messages_dead_letter",
+    "threshold": 1,
+    "severity": "CRITICAL",
+    "owner": "second-line",
+    "action": "Determine impact and authorized redrive"
+  },
+  {
+    "name": "ack_exhausted",
+    "metric": "ack_dead_letter",
+    "threshold": 1,
+    "severity": "CRITICAL",
+    "owner": "partner-contact",
+    "action": "Business may be committed; repair ACK only"
+  }
+]

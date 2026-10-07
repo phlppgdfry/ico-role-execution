@@ -1,0 +1,11 @@
+{
+  "message_id": "transport-003",
+  "event_key": "DEP-001",
+  "partner_id": "ALPHA",
+  "site_id": "ZEE",
+  "vin": "DEMO0000000000001",
+  "event_type": "DEPARTURE",
+  "location": "ZEE-A02",
+  "event_at": "2026-09-28T08:10:00Z",
+  "expected_version": 2
+}

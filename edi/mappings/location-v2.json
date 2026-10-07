@@ -1,0 +1,1 @@
+{"version": "2", "aliases": {"ZEE-A-01": "ZEE-A01", "ZEE-A-02": "ZEE-A02", "KAL-B-01": "KAL-B01", "KAL-B-02": "KAL-B02"}, "constraint": "alias target must exist, be active and match site"}

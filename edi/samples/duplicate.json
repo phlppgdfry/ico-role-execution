@@ -1,0 +1,11 @@
+{
+  "message_id": "transport-001-retry",
+  "event_key": "ARR-001",
+  "partner_id": "ALPHA",
+  "site_id": "ZEE",
+  "vin": "DEMO0000000000001",
+  "event_type": "ARRIVAL",
+  "location": "ZEE-A01",
+  "event_at": "2026-09-28T08:00:00Z",
+  "expected_version": 0
+}

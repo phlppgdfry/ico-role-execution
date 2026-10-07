@@ -1,0 +1,17 @@
+{
+  "source": "/api/metrics",
+  "panels": [
+    "messages_received",
+    "messages_retry_wait",
+    "messages_rejected",
+    "messages_dead_letter",
+    "oldest_pending_seconds",
+    "ack_pending",
+    "ack_dead_letter",
+    "http_requests",
+    "http_errors",
+    "mean_request_ms"
+  ],
+  "simulation": true,
+  "notes": "Actual instantaneous/cumulative measurements; not fabricated uptime, p95 or enterprise DB connection counters"
+}
